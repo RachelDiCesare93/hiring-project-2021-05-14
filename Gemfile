@@ -14,6 +14,12 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '5.2.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'bootstrap', '~> 5.0.1'
+gem 'jquery-rails'
+gem 'figaro', '~> 1.2'
+gem 'rails-ajax', '~> 1.0', '>= 1.0.0.20140320'
+gem 'highstock-rails'
+gem 'dotenv-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

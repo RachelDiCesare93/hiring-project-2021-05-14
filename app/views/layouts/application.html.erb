@@ -4,11 +4,18 @@
     <title>HiringProject</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application',  media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application',  'data-turbolinks-track' => true %>
+    <link rel = "icon" href = "https://i.imgur.com/m3Ox1Fk.png" type = "image/x-icon">
   </head>
 
   <body>
-    <%= yield %>
+      <script src="https://code.highcharts.com/stock/highstock.js"></script>
+      <script src="https://code.highcharts.com/modules/boost.js"></script>
+      <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <%= render 'home/navbar'%>
+    <div class= "container">
+      <%= yield %>
+    </div>
   </body>
 </html>
